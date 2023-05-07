@@ -1,0 +1,26 @@
+seo: 
+  site_name: Sebastian Russold Sommelier
+  title: Sebastian Russold Sommelier
+  url: https://russold-sommelier.com 
+  description: 1. Platz Sommmelier Trophy “Deutschlands Bester Sommelier 2021/22 Sommelier Union e.v. Gastronomie & Handel. Moderation Events & Messen. Privater Sommelier
+  keywords: Sommelier, Moderation, Gastronomie, Weinkarte, Weinkeller 
+  type: Website
+  social_image: /images/sommelier_trophy_social.jpg
+  author: Sebastian Russold, Anna Kauker
+  favicon_image: 
+social: 
+  instagram_username: sebastianrussold
+  facebook_url: https://www.facebook.com/sebastian.russold
+  linkedin_url: https://de.linkedin.com/in/sebastian-russold?original_referer=https%3A%2F%2Fwww.google.com%2F 
+design: 
+  dark-text_color: '##24282B'
+  medium-text_color: 'rgb(90,90,95)'
+  light-text_color: '#f7f5f3'
+  featured-text_color: 'red'
+  link-text_color: '#77a2a9'
+  green_color: 'rgb(28,42,44)'
+  dark_color: '#1C2A2C'
+  light_color: 'white'
+  v-light_color: '#f9f9f9'
+  featured_color: '#6495ed'
+  accent_color: 'rgb(167, 74, 74)'

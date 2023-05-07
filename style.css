@@ -1,5 +1,1260 @@
+/* 
+- dark green - 1C2A2C
+- footer dark - 24282B
+- font-family: 'Raleway', sans-serif;
+- 300 400 500 900 (normal and italic)
+
+*/
+
+/** {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  Temporary Styles */
+
+/** {
+    padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);
+} 
+
+html, 
+body {
+    border: none;
+} 
+
+h1,h2,h3,h4,h5,h6,p, a {
+    border: 2px solid rgb(179, 84, 84);
+} */
+
+/* End temporary styles */
+
+
+
+
+/*-------------CSS Reset-----------*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+img {         max-width: 100%; }
+
+/* Optional padding to override default gridlex columns */ 
+    [class*=col] { padding: 0; }
+
+/*----------------------Universal Styles and Utility Classes---------------*/
+
+/*-----------Universal-Styles---------------*/
+
+html {
+scroll-behavior: smooth;
+}
+
+
+
+
+
+/* ---------- Negative Space Utility Classes  ------------------ */ 
+
+.capped-width-wide      { max-width: 1600px; margin: auto; }
+.capped-width           { max-width: 1200px; margin: auto; }
+.capped-width-narrow    { max-width: 1000px; margin: auto; }
+.capped-width-v-narrow  { max-width: 800px;  margin: auto; }
+
+
+
+/*---------- Minimum Height --------*/
+
+.tall-10 {      min-height: 10vh; }
+.tall-20 {      min-height: 20vh; }
+.tall-30 {      min-height: 30vh; }
+.tall-50 {      min-height: 50vh; }
+.tall-60 {      min-height: 60vh; }
+.tall-70 {      min-height: 70vh; }
+.tall-80 {      min-height: 80vh; }
+.tall-90 {      min-height: 90vh; }
+.tall-100 {     min-height: 100vh;}
+
+/*------- Padding Utility Classes-------*/
+
+.padding-sm {   padding:2.5%;}
+.padded     {   padding: 5%;    }
+.padded-lg  {   padding: 10%;   }
+
+
+.padded-05 {    padding: 0.5rem;}
+.padded-1  {    padding: 1rem;  }
+.padded-2  {    padding: 2%;  }
+.padded-3 {     padding: 3%;}
+.padded-25 {    padding: 2.5rem}    
+.padded-26 {    padding: 2.6rem}
+.padded-45 {    padding: 4.5rem}    
+
+.padded-t  {    padding-top: 5%; }
+.padded-b  {    padding-bottom: 5%; }
+.padded-l  {    padding-left: 5%; }
+.padded-r  {    padding-right: 5%; }
+
+.padded-t-20 
+           {    padding-top: 20%}
+
+.padded-tb  {   padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  {   padding-left: 5%; padding-right: 5%; }
+
+.padded-tbr {padding-top:1%; padding-bottom:1%; padding-right: 1%; padding-left:0}
+
+.padded-t-1 {   padding-top: 1rem; }
+.padded-b-1 {   padding-bottom: 1rem; }
+.padded-l-1 {   padding-left: 1rem; }
+.padded-r-1 {      padding-right: 1rem; }
+
+.padded-t-2 {   padding-top: 2rem; }
+.padded-b-2 {   padding-bottom: 2rem; }
+.padded-l-2 {   padding-left: 2rem; }
+.padded-r-2 {   padding-right: 2rem; }
+
+.padded-t-0 {   padding-top: 0; }
+.padded-b-0 {   padding-bottom: 0; }
+.padded-l-0 {   padding-left: 0; }
+.padded-r-0 {   padding-right: 0; }
+
+/*------Margin Utility Classes--------------*/
+
+
+.margin {margin: 1%;} 
+
+.margin-t-0 {   margin-top: 0; }
+.margin-b-0 {   margin-bottom: 0; }
+.margin-l-0 {   margin-left: 0; }
+.margin-r-0 {   margin-right: 0; }
+
+.margin-t {     margin-top: 5%; }
+.margin-b {     margin-bottom: 5%; }
+.margin-l {     margin-left: 5%; }
+.margin-l-25 {  margin-left: 2.5%}
+.margin-r {     margin-right: 5%; }
+
+.margin-t-1 {   margin-top: 1rem; }
+.margin-b-1 {   margin-bottom: 1rem; }
+.margin-l-1 {   margin-left: 1rem; }
+.margin-r-1 {   margin-right: 1rem; }
+
+.margin-t-2 {   margin-top: 2rem; }
+.margin-b-2 {   margin-bottom: 2rem; }
+.margin-l-2 {   margin-left: 2rem; }
+.margin-r-2 {   margin-right: 2rem; }
+
+.margin-tb {    margin-top: 5%; margin-bottom: 5%; }
+.margin-tb-10 {    margin-top: 10%; margin-bottom: 10%; }
+.margin-lr {    margin-left: 5%; margin-right: 5%; }
+.margin-lr-7 {  margin-left: 7%; margin-right:7%;}
+
+.margin-t-minus {margin-top: -4%;}
+
+.center-vertical {
+    justify-content: center;
+}
+
+
+/*--------- Typography --------------------*/
+/* source-sans-3-300 - latin */
+@font-face {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 300;
+src: url('../fonts/source-sans-3-v5-latin-300.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/source-sans-3-v5-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/source-sans-3-v5-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-300.woff') format('woff'), /* Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/source-sans-3-v5-latin-300.svg#SourceSans3') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* source-sans-3-regular - latin */
+@font-face {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/source-sans-3-v5-latin-regular.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/source-sans-3-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/source-sans-3-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/source-sans-3-v5-latin-regular.svg#SourceSans3') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* source-sans-3-200 - latin */
+@font-face {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 200;
+src: url('../fonts/source-sans-3-v5-latin-200.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/source-sans-3-v5-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/source-sans-3-v5-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-200.woff') format('woff'), /* Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/source-sans-3-v5-latin-200.svg#SourceSans3') format('svg'); /* Legacy iOS */
+font-display: swap; 
+}
+/* source-sans-3-500 - latin */
+@font-face {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 500;
+src: url('../fonts/source-sans-3-v5-latin-500.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/source-sans-3-v5-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/source-sans-3-v5-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-500.woff') format('woff'), /* Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/source-sans-3-v5-latin-500.svg#SourceSans3') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* source-sans-3-700 - latin */
+@font-face {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 700;
+src: url('../fonts/source-sans-3-v5-latin-700.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/source-sans-3-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/source-sans-3-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/source-sans-3-v5-latin-700.svg#SourceSans3') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* source-sans-3-600 - latin */
+@font-face {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 600;
+src: url('../fonts/source-sans-3-v5-latin-600.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/source-sans-3-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/source-sans-3-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-600.woff') format('woff'), /* Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/source-sans-3-v5-latin-600.svg#SourceSans3') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* source-sans-3-800 - latin */
+@font-face {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 800;
+src: url('../fonts/source-sans-3-v5-latin-800.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/source-sans-3-v5-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/source-sans-3-v5-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-800.woff') format('woff'), /* Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/source-sans-3-v5-latin-800.svg#SourceSans3') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* source-sans-3-900 - latin */
+@font-face {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 900;
+src: url('../fonts/source-sans-3-v5-latin-900.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/source-sans-3-v5-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/source-sans-3-v5-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-900.woff') format('woff'), /* Modern Browsers */
+url('../fonts/source-sans-3-v5-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/source-sans-3-v5-latin-900.svg#SourceSans3') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+
+/* cormorant-garamond-300 - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: normal;
+font-weight: 300;
+src: url('../fonts/cormorant-garamond-v15-latin-300.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-300.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-300.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-300italic - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: italic;
+font-weight: 300;
+src: url('../fonts/cormorant-garamond-v15-latin-300italic.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-300italic.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-300italic.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-regular - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/cormorant-garamond-v15-latin-regular.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-regular.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-italic - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: italic;
+font-weight: 400;
+src: url('../fonts/cormorant-garamond-v15-latin-italic.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-italic.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-italic.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-500 - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: normal;
+font-weight: 500;
+src: url('../fonts/cormorant-garamond-v15-latin-500.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-500.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-500.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-500italic - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: italic;
+font-weight: 500;
+src: url('../fonts/cormorant-garamond-v15-latin-500italic.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-500italic.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-500italic.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-600 - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: normal;
+font-weight: 600;
+src: url('../fonts/cormorant-garamond-v15-latin-600.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-600.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-600.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-600italic - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: italic;
+font-weight: 600;
+src: url('../fonts/cormorant-garamond-v15-latin-600italic.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-600italic.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-600italic.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-700 - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: normal;
+font-weight: 700;
+src: url('../fonts/cormorant-garamond-v15-latin-700.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-700.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-700.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;
+}
+/* cormorant-garamond-700italic - latin */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-style: italic;
+font-weight: 700;
+src: url('../fonts/cormorant-garamond-v15-latin-700italic.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('../fonts/cormorant-garamond-v15-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/cormorant-garamond-v15-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-700italic.woff') format('woff'), /* Modern Browsers */
+url('../fonts/cormorant-garamond-v15-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/cormorant-garamond-v15-latin-700italic.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+font-display: swap;}
+
+/* didot lt std italic */
+
+@font-face {
+font-family: 'Didot LT STD';
+font-style: italic;
+font-weight: 700;
+src: url('/workspaces/Sebastian/fonts/didot-lt-std-italic.eot'); /* IE9 Compat Modes */
+src: local(''),
+url('/workspaces/Sebastian/fonts/didot-lt-std-italic.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('/workspaces/Sebastian/fonts/didot-t-std-italic.woff2') format('woff2'), /* Super Modern Browsers */
+url('/workspaces/Sebastian/fonts/didot-t-std-italic.woff') format('woff'), /* Modern Browsers */
+url('/workspaces/Sebastian/fonts/didot-t-std-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+url('/workspaces/Sebastian/fonts/didot-t-std-italic.svg#DidotLTSTD') format('svg'); /* Legacy iOS */
+font-dsiplay: swap;}
+
+
+
+
+.left   {       text-align: left; }
+.center {       text-align: center; }
+.right  {       text-align: right; }
+
+.vertical-align {vertical-align: middle;}
+
+[class*=col-][class*=-bottom] {
+    align-self: center;
+}
+
+body {          font-family: 'Source Sans 3', sans-serif;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {            
+    font-family: 'Didot LT STD', serif;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.04rem;}
+
+
+h1 {            font-size: 3rem;}
+h2 {            font-size: 1.5rem;} 
+h3 {            font-weight: 100;}
+
+.light-text {    color: white; } 
+
+.not-bold {     font-weight: 400; }
+
+.subtle { 
+    opacity: 0.8;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+p, li {
+    font-weight: 300;   
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.03rem;
+}
+
+ul { margin-left: 1rem; }
+li { padding-left: 1.5rem;}
+
+h2:last-child,
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child,
+li:last-child {
+    margin-bottom: 0;
+}
+
+.font-dark   {  color: var(--dark-text);}
+
+.small-text  {  font-size: 1.5rem;}
+.medium-text {  font-size: 3rem;}
+.big-text    {  font-size: 4.5rem;}
+
+
+
+.font-weight-light { 
+  font-weight: 200 ;}
+.font-weight-medium { 
+  font-weight: 500;}
+.font-weight-bold { 
+    font-weight: 900;}
+
+.quote-icon {
+    font-size: 2rem;
+      
+    }
+    
+.testimonial {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-style: italic;
+    }
+
+.services {     font-size: 1rem;
+    font-style: italic}
+    
+.author {
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    }
+
+.service h3 {
+margin-top: 1rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+
+/*--------Link Styles-------*/
+
+a {             color: inherit; 
+    text-decoration: none;}
+
+a:hover {       color: #77a2a9; }
+
+nav a {         text-decoration: none; }
+
+nav a:hover {    color:#77a2a9;}
+
+p a {           text-decoration: none;
+    border-bottom: 1px solid;
+    transition: all 0.3s;}
+
+/*---------Font Awesome Icons-------*/
+
+.fas,
+.fa-regular,
+.fa-brands {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 2rem;
+    color: rgb(248, 249, 250);
+}
+
+.fa-brands:hover {color:#77a2a9}
+
+
+
+
+
+
+
+/*--------------Images-------------------------------------------*/
+
+
+.featured-color {color: #EBEBEB;}
+.bg-featured {  background-color: var(--dark); }
+.bg-dark     {  background-color: #257016;
+    color: white; }
+
+.bg-light {     background-color: white;
+                color: #257016}
+.bg-white {     background-color: white;}
+.bg-blue {      background-color: rgb(29,53,87);}
+.bg-lilac {     background-color:rgb(114, 103, 139)}
+.bg-grey {      background-color:#b2bec3}
+.bg-yellow {    background-color: lightyellow}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    max-height: 10rem;
+}
+
+/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+
+.landscape     { padding-bottom: 66%;  }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
+
+
+/* Background Position */
+.bg-pos-t {      background-position: top; }
+.bg-pos-b {      background-position: bottom; }
+.bg-pos-l {      background-position: left; }
+.bg-pos-r {      background-position: right; }
+
+.bg-team {      background-image: url(/images/team.jpg);
+                background-size: cover;}
+
+.bg-mann {       background-image: url(/images/mann.jpg);
+                background-size: cover;}
+
+.bg-frau {    background-image: url(/images/frau.jpg);
+                background-size: cover;}
+
+.bg-sebastian { background-image: url(images/sebastian.jpg);
+                background-size: cover;}
+
+
+.bg-padded {
+    padding-bottom: 45%;
+}
+
+
+
+.social-banner {
+    background-position: top;
+}
+
+.card {         border: 3rem #24282B;
+}
+
+.window {       border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem; }
+
+.teardrop {     border-radius: 20rem;
+    border-bottom-right-radius: 0;}
+
+.rund {         border-radius: 20rem;}
+
+[class*=grid-]>[class*=col-3] {
+flex-basis: 29%;
+}
+
+
+
+
+/*------------------- Slider------------------------------- */
+
+.testimonial-slider-container {
+    /*border: 2px solid lightblue;*/
+    padding:2%;
+    max-width: 900px;
+    margin: auto; /*centers the text evenly*/
+    margin-top: 5%;
+}
+
+
+.slider-item {
+    padding: 1rem;
+    /*border: 2px solid lightgreen;*/
+    display: none; /* Plus .slider-item:first-child saves the first image to  be shown if js collapses*/
+}
+
+.slider-item:first-child {
+    display: block;
+}
+
+
+slick-next:before {
+    content: '→';
+}
+
+.slick-next::before, .slick-prev::before {
+    font-family: 'Bungee', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(90,90,90);
+}
+
+
+
+/* -----Puts the arrows inside the parent container------
+
+.slick-prev {
+       left: 0.1%%;
+}
+
+.slick-next {
+       right: 0.3%;
+}*/
+
+/*-------Dots----*/
+.slick-dots {
+    bottom: -15%;
+    left: 0; /* This align the dots perfectly to the center, do not delete */
+}
+
+.slick-dots li,
+.slick-dots li button {
+      width: 12px;
+}
+
+.slick-dots li button::before {
+    font-size: 10px;
+    color: #257016;
+}
+
+.slick-dots li.slick-active button::before {
+       color: #257016;
+}
+
+/*-------Slider Text Styles-----*/
+
+.slider-item-p {
+    text-align: justify;
+
+}
+
+/*----------------SEO---------------*/
+
+.hide {display: none;}
+
+
+
+
+/*-------------------- Header--------------------------- */
+
+header {
+    padding: 1% 2%;
+    padding-left: 2%;
+    min-height: 10vh;
+    
+   
+}
+
+.navigation  {z-index: 1;}
+
+.header-h1 {font-size: 1.4rem;
+  padding-top: 1%;;}
+
+
+
+.emphasis-button {
+    border: 1px solid;
+  
+}
+
+.navigation .emphasis-button {margin-left: 1rem;}
+
+
+.navigation a {
+    padding: 0.7rem;
+    text-transform: uppercase;
+}
+
+.fixed {      position: fixed;
+    }
+
+.logo {       margin-bottom: 10%;
+    max-width: 55%;
+}
+
+/*-----------------Banner Section------------*/
+
+.banner-dark {
+    background-color: #257016;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+  }
+
+.banner-light {
+    background-color: white;
+    color: #257016;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+  }
+
+  
+  .bg-yoga {
+    background-image: url('/images/wellness-3.jpg');
+  }
+
+/*--------------Hamburger Menu-----------------*/
+
+.hamburger-button {
+    cursor: pointer;
+    padding:0 0.7rem;
+    display: inline-block;
+    font-weight:100;
+    font-size: 1.7rem;
+    line-height: 0.5;
+    right: 0.6rem;
+    top: 2.4rem;
+    z-index:2;
+    position: fixed;
+}
+
+.fixed {position: fixed;}
+
+.mobile-menu {
+    background-color: #77a2a9;
+    padding: 5%;
+    display:none;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+    max-width: 50%;
+    left:70%;
+    color: white;
+    z-index: 1;
+
+}
+
+.mobile-menu.inactive {display:none;}
+
+.mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5vh 5%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+
+}
+
+.hamburger-button.active {
+    color:white;}
+
+
+/*----------------Overlay--------------*/
+
+.banner {
+    background-position: center;
+    min-height: 90vh;
+    padding: 5%;
+}
+
+.banner h1 {
+    color: white;
+    line-height: 3.4rem;
+    letter-spacing: 0.1rem;
+}
+
+.banner h2 {
+    color: white;
+}
+
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.bg-overlay > * {
+    position: relative;
+}
+
+
+/* Mehr/Weniger Button */
+
+.more {
+    display: none;
+}
+
+.post {
+    text-align: justify;
+}
+
+.post h3 {
+  margin-top: 2rem;
+   margin-bottom: 1rem;
+}
+
+/*--------Button-----------*/
+
+button {
+    display: block;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 1px solid white;
+    cursor: pointer;
+    color: black;
+    border-radius: 15% / 50%;
+    width: 195px;
+    height: 65px;
+}
+
+button:hover {  color:#77a2a9;}
+
+.center-button {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.button-green {
+    color: white;
+    background-color: #257016;
+    border-color: #257016;
+}
+
+.button-white {
+    color: #257016;
+    background-color: white;
+    border-color: white;
+}
+
+.mail-button { padding: 1rem;
+    margin-top: 2%;
+    display: inline-block;
+    color: inherit;}
+
+.mail-button:hover {
+    color: #77a2a9;}
+
+/*----------------------Footer----------------------------*/
+
+
+footer p{
+    margin-bottom: 0.2rem;
+}
+
+footer h2{
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 3.2rem;
+}
+
+.inline a {
+    display: inline-block;
+    padding-right: 1.7rem;
+    font-size: 1.5rem;
+}
+
+.inline a:hover {
+    color:#77a2a9}
+
+
+.socials {     padding-top: 5%;}
+
+footer a {     display: inline-block;}
+
+
+/*-------Cookie Banner----------*/
+
+#cookie-notice {
+    padding: 0.5rem 1rem;
+    display: none;
+    text-align: center;
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    background: #222;
+    color: rgba(255,255,255,0.8);
+    min-height: 10vh;
+}
+#cookie-notice a {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+#cookie-notice .button-subtle {
+    opacity: 0.8;
+}
+#close-cookie-banner {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    opacity: 0.5
+}
+
+
+/*--------------other-----------*/
+
+.width-30 {    max-width: 30%;}
+
+.hide {         display: none;}
+
+
+
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+      display: none;
+}
+
+
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+
+
+.show-md {    display: block; }
+.hide-md {    display: none;  }
+
+.md-tall-100 {min-height: 100vh;}
+.md-tall-20 { min-height: 20vh;}
+.md-tall-10 { min-height: 10vh;}
+
+.md-padded-5 {padding:5%;}
+.md-padded-blr-5 {
+    padding-bottom:5%;
+    padding-left: 5%;
+    padding-right: 5%;}
+
+.md-margin-tb {
+    margin-top:7%;
+    margin-bottom: 7%}
+
+.md-padded-0 {padding: 0%;}
+
+.md-text-center { 
+    text-align: center; }
+
+.md-font-size-big {
+    font-size: 3.3rem;}
+.md-font-size-medium {
+    font-size: 1.2rem;
+}
+
+.md-tall-50 { min-height: 50vh;}
+.md-tall-40 { min-height: 40vh;}
+
+
+p#box-medium {
+    min-height: 32rem;
+    overflow: hidden;
+}
+
+.md-square    {padding-bottom: 115%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+
+[class*=grid] .sm-stack {
+flex-basis: 100%;
+max-width: 100%;
+}
+
+h2 {        font-size: 1.3rem;}
+p,
+li          {font-size: 0.9rem;}
+
+h2 {        font-weight: 100;}
+
+h3 {        padding-top: 3%; 
+     }
+
+.h3.sm {padding-top: 0;
+          margin-top: 0;
+          margin-bottom: 1%;
+          line-height: 3;}
+
+
+.show-sm {    display: block; }
+.hide-sm {    display: none;  }
+
+.bg-light-sm {     background-color: rgb(248, 249, 250);}
+
+.a-inline-block {display: inline-block;}
+
+.sm-text-center { 
+    text-align: center; }
+.sm-text-left { 
+    text-align: left; }
+.sm-text-right { 
+    text-align: right; }
+
+
+.sm-padded {  
+    padding: 5%; }
+.sm-padded-1 {
+    padding: 1rem; }
+.sm-padded-05 {
+    padding: 0.5rem; }
+
+.sm-padded-3 {padding:3%;}
+
+.sm-padded-3-t {
+    padding-top: 3%;}
+
+.sm-padded-8 {padding:8%;}
+  
+.sm-padded-t-0 { 
+    padding-top: 0; }
+.sm-padded-t-05 { 
+        padding-top: 0.5rem; }
+
+.sm-padded-b-0 { 
+    padding-bottom: 0; }
+
+.sm-padded-b-05 { 
+      padding-bottom: 0.5rem; }
+
+.sm-padded-tb-05 { 
+      padding-bottom: 0.5rem; 
+      padding-top: 0.5rem;}
+.sm-padded-tb-1 { 
+      padding-bottom: 1rem; 
+      padding-top: 1rem;}
+
+.sm-padded-l-0 { 
+    padding-left: 0; }
+
+.sm-padded-l-5 { 
+      padding-left: 5%; }
+.sm-padded-r-0 { 
+    padding-right: 0; }
+    
+.sm-margin-t-0 { 
+    margin-top: 0; }
+
+.sm-margin-t-05 {
+    margin-top:0.5rem;}
+
+.sm-margin-t-1 {margin-top:1rem;}
+
+.post.sm-margin-t-1 {margin-top:1rem;}
+
+
+.sm-margin-b-0 { 
+    margin-bottom: 0; }
+.sm-margin-b-05 {
+        margin-bottom:0.5rem;}
+
+
+.sm-margin-l-0 { 
+    margin-left: 0; }
+.sm-margin-l-05 { 
+    margin-left: 0.5rem; }
+
+.sm-margin-l-r-1 { 
+    margin-left: 1rem;
+    margin-right: 1rem;
+             }
+
+.sm-margin-tb-7 {
+    margin-top:7%;
+    margin-bottom: 7%}
+
+
+.sm-margin-r-0 { 
+    margin-right: 0; }
+
+  
+
+.sm-font-size-small {
+    font-size: 0.7rem;
+    }
+.sm-font-size-medium {
+    font-size: 1.3rem;
+}
+
+.sm-tall-30 { min-height: 30vh;}
+.sm-tall-40 { min-height: 40vh;}
+.sm-tall-50 { min-height: 50vh;}
+.sm-tall-100 {min-height: 100vh;}
+
+.border-none {border: none;}
+
+.testimonial-slider-container-sm {
+    padding:none;}
+
+.p#box-medium {    
+    height: 30rem;
+    overflow:hidden;}
+
+.sm-mobile-menu {min-width: 70%;
+      left:50%}
+
+.banner-sm h1{  line-height: 2.4rem; }
+
+
+     
+
+
+
+
+
+
+
+
+
+
+  
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+  
+@media (max-width: 36em) {
+.show-xs {     display: block; }
+.hide-xs {     display: none;  }
+  }
+
+
+
+/* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) 
+    [class*=grid] .xxs-stack {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.hide-xxs {display:none;}
+
+.xxs-img {
+padding: 40%;
+margin: 0.19rem;
 }
